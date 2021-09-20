@@ -13,6 +13,12 @@ Run the app locally in dev mode with `pipenv run python app/app.py`
 
 ## Deploy to GCP
 
+### Skip CGR and Deploy with App Engine
+Note: there can only be one app engine application per project.  
+Create the App Engine App: `gcloud app create`  
+Deploy with `gcloud app deploy --appyaml=app.yml`
+
+
 ### Build and Deploy to GCR
 To select you account and project, run `gcloud init`  
 Set a default region.  
